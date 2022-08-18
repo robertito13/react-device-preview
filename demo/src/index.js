@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {render} from 'react-dom'
+import { createRoot } from 'react-dom/client';
 
 import ReactDevicePreview from '../../src'
 
@@ -33,4 +33,6 @@ class Demo extends Component {
   }
 }
 
-render(<Demo/>, document.querySelector('#demo'))
+const container = document.getElementById('demo');
+const root = createRoot(container);
+root.render(<Demo />)
