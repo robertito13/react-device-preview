@@ -1,14 +1,11 @@
 {
   "name": "react-device-preview",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "react-device-preview React component",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "src/index.js",
+  "module": "src/index.js",
   "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
+    "src"
   ],
   "scripts": {
     "build": "nwb build-react-component --copy-files",
