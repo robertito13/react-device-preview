@@ -1,6 +1,6 @@
 {
   "name": "@robertito13/react-device-preview",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "react-device-preview React component",
   "author": "Roberto Vaccaro <roberto.vaccaro@gmail.com>",
   "homepage": "https://github.com/robertito13",
@@ -39,8 +39,5 @@
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
-  "files": [
-    "dist"
-  ],
   "types": "dist/index.d.ts"
 }
