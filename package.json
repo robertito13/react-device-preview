@@ -5,9 +5,13 @@
   "author": "Roberto Vaccaro <roberto.vaccaro@gmail.com>",
   "homepage": "https://github.com/robertito13",
   "license": "MIT",
-  "repository": "",
+  "repository": {
+    "url": "https://github.com/robertito13/react-device-preview"
+  },
   "keywords": [
-    "react-component device-preview"
+    "react-component",
+    "devicepreview",
+    "preview"
   ],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
