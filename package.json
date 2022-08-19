@@ -1,13 +1,18 @@
 {
-  "name": "react-device-preview",
+  "name": "@robertito13/react-device-preview",
   "version": "2.0.0",
   "description": "react-device-preview React component",
   "author": "Roberto Vaccaro <roberto.vaccaro@gmail.com>",
   "homepage": "https://github.com/robertito13",
   "license": "MIT",
   "repository": {
+    "type": "git",
+    "url": "https://github.com/robertito13/react-device-preview.git"
+  },
+  "bugs": {
     "url": "https://github.com/robertito13/react-device-preview"
   },
+  "private": false,
   "keywords": [
     "react-component",
     "devicepreview",
