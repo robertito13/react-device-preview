@@ -1,23 +1,28 @@
 import expect from 'expect'
 import React from 'react'
-import {render, unmountComponentAtNode} from 'react-dom'
+import ReactDOM from 'react-dom/client';
+import { act } from 'react-dom/test-utils';
 
 import Component from 'src/'
 
-describe('Component', () => {
-  let node
+let container;
 
-  beforeEach(() => {
-    node = document.createElement('div')
-  })
+global.IS_REACT_ACT_ENVIRONMENT = true;
 
-  afterEach(() => {
-    unmountComponentAtNode(node)
-  })
+beforeEach(() => {
+  container = document.createElement('div');
+  document.body.appendChild(container);
+})
 
-  it('displays a welcome message', () => {
-    render(<Component/>, node, () => {
-      expect(node.innerHTML).toContain('Welcome to React components')
-    })
-  })
+afterEach(() => {
+  document.body.removeChild(container);
+  container = null;
+})
+
+it('displays a welcome message', () => {
+  act(() => {
+    ReactDOM.createRoot(container).render(<Component>Welcome to React Device Preview</Component>);
+  });
+
+  expect(container.innerHTML).toContain('Welcome to React Device Preview')
 })
