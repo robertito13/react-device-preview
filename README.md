@@ -36,5 +36,4 @@ class Something extends Component {
 
 #### Credits
 
-Thanks again to the people of [Marvel](https://marvelapp.com/) for the hard work. And this small 
-project will never be here without them. 
+https://github.com/bdryanovski/react-device-preview/
